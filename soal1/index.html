@@ -1,0 +1,410 @@
+<html>
+
+
+<head>
+    <!-- <meta charset="utf-8" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="./fonts/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/normalize.css">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container-fluid p-0">
+
+        <div class="row d-md-none d-lg-none d-xl-none d-flex justify-content-end m-0 mobile-nav-row">
+            <nav class="navbar col-12 d-flex flex-row-reverse">
+                <input id="check" type="checkbox" class="hamburgur-checkbox d-none" />
+                <label class="hamburgur m-3" for="check">
+                    <div class="hamburgur-line menu-line-1 w-100 rounded"></div>
+                    <div class="hamburgur-line menu-line-2 w-100 rounded"></div>
+                    <div class="hamburgur-line menu-line-3 w-100 rounded"></div>
+                </label>
+
+                <div class="font-weight-bold h4 position-absolute text-green title">جاسترو</div>
+
+                <input id="check-s" type="checkbox" class="search-checkbox d-none" />
+
+                <label for="check-s" class="text-green h4 ml-3 d-flex">
+                    <i class="fas fa-search"></i>
+                </label>
+
+                <div class="col-12 position-fixed d-flex flex-column align-items-center justify-content-center text-center hamburgur-menu bg-secondary">
+                    <ul class="list-unstyled">
+                        <li class="m-3"><a class="text-light" href="#">صفحه اصلی</a></li>
+                        <li class="m-3"><a class="text-light" href="#">ایده ها</a></li>
+                        <li class="m-3"><a class="text-light" href="#">ویژگی ها</a></li>
+                        <li class="m-3"><a class="text-light" href="#">درباره ما</a></li>
+                        <li class="m-3"><a class="text-light" href="#">همکاری با ما</a></li>
+                        <li class="m-3"><a class="text-light" href="#">تماس با ما</a></li>
+                    </ul>
+                    <button class="btn btn-orange text-light mb-3">دانلود</button>
+                </div>
+
+                <label class="d-flex justify-content-center w-100 p-3 bg-secondary position-fixed search-box"><input
+                        class="rounded h3 border-0 w-75" type="search" placeholder="...جستجو" /></label>
+            </nav>
+
+            <div class="logo d-flex justify-content-center align-items-center flex-row-reverse d-md-none d-lg-none d-xl-none">
+                <div class="ml-4"><img class="icon" src="./images/camel-logo.png" alt="JustRo" /></div>
+                <div class="h4 text-green ml-2">جاسترو</div>
+            </div>
+        </div>
+        <!-- Mobile navbar - End -->
+
+
+        <div class="row m-0 d-none d-md-flex d-lg-flex d-xl-flex flex-row-reverse justify-content-center desktop-nav-row">
+            <div class="d-flex flex-row-reverse align-items-start justify-content-end pr-5 logo">
+                <div class="pt-4"><img class="icon" src="./images/camel-logo.png" alt="JUstRo" /></div>
+                <div class="h4 text-green ml-2 pt-5">جاسترو</div>
+            </div>
+
+            <nav class="d-flex flex-row-reverse justify-content-center align-content-lg-center mt-lg-4">
+                <ul class="menu mt-3 list-unstyled d-flex flex-row-reverse">
+                    <li class="text-center m-3"><a class="text-dark" href="#">ایده ها</a></li>
+                    <li class="text-center m-3"><a class="text-dark" href="#">صفحه اصلی</a></li>
+                    <li class="text-center m-3"><a class="text-dark" href="#">ویژگی ها</a></li>
+                    <li class="text-center m-3"><a class="text-dark" href="#">درباره ما</a></li>
+                    <li class="text-center m-3"><a class="text-dark" href="#">همکاری با ما</a></li>
+                    <li class="text-center m-3"><a class="text-dark" href="#">تماس با ما</a></li>
+                </ul>
+                <button class="btn btn-orange text-light mt-4">دانلود</button>
+
+            </nav>
+        </div>
+        <!-- Desktop navbar - End -->
+
+        <!-- Carousel - Start -->
+        <div data-interval="2500" id="myCarousel" class="row h-50 carousel position-relative slide m-0 mt-2" data-ride="carousel">
+            <ol class="align-items-center position-absolute carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active mx-2"></li>
+                <li data-target="#myCarousel" data-slide-to="1" class="mx-2"></li>
+                <li data-target="#myCarousel" data-slide-to="2" class="mx-2"></li>
+            </ol>
+
+            <div class="carousel-inner p-1">
+                <!-- slide  -->
+                <div id="first" class="carousel-item active">
+                    <div class="row m-0 p-0 d-flex justify-content-center align-items-center">
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-2 px-3">
+                            <div class="text-green h3 mb-5">
+                                <span class="better">بهتر</span>
+                                <span>بشناسید</span>
+                            </div>
+
+                            <div>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-7 col-xl-5">
+                            <img class="w-100" src="./images/slide1.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- slide  -->
+                <div class="carousel-item">
+                    <div class="row m-0 p-0 d-flex justify-content-center align-items-center">
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-2 px-3">
+                            <div class="text-green h3 mb-5">
+                                <span class="better">بهتر</span>
+                                <span>بشناسید</span>
+                            </div>
+
+                            <div>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-7 col-xl-5">
+                            <img class="w-100" src="./images/slide2.png" alt="" />
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- slide  -->
+                <div class="carousel-item">
+                    <div class="row m-0 p-0 d-flex justify-content-center align-items-center">
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-2 px-3">
+                            <div class="text-green h3 mb-5">
+                                <span class="better">بهتر</span>
+                                <span>بشناسید</span>
+                            </div>
+
+                            <div>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-7 col-xl-5">
+                            <img class="w-100" src="./images/slide3.png" alt="" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Carousel - End -->
+
+    <!-- Main wave -->
+    <div class="row p-0 m-0 main-wave"></div>
+
+    <!-- Adv. - Start -->
+    <div class="row m-0 d-flex justify-content-center align-items-center ad-section">
+        <div class="d-none d-md-block col-md-0 col-lg-1 col-xl-2"></div>
+
+        <div class="texts col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-3 mt-4 p-4 order-sm-3 order-md-0">
+            <div class="h3 text-green">
+                پروازها، جستجو و رزرو کنید
+            </div>
+            <div class="mt-4 text-justify">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+            </div>
+        </div>
+
+        <div class="circles text-green col-xs-12 col-sm-12 col-md-2 col-lg-1 col-xl-1 d-md-flex flex-md-column align-items-center h1">
+            <div class="d-inline-block d-sm-inline-block bg-light mt-md-4 mt-lg-4 mt-xl-4 circle text-center icon-icon_didani">
+            </div>
+            <div class="d-inline-block d-sm-inline-block bg-light mt-md-4 mt-lg-4 mt-xl-4 circle text-center icon-icon_restaurant">
+            </div>
+            <div class="d-inline-block d-sm-inline-block bg-light mt-md-4 mt-lg-4 mt-xl-4 circle text-center icon-icon_hotel">
+            </div>
+            <div class="d-inline-block d-sm-inline-block bg-light mt-md-4 mt-lg-4 mt-xl-4 circle text-center icon-icon_fly">
+            </div>
+            <div class="d-inline-block d-sm-inline-block bg-light mt-md-4 mt-lg-4 mt-xl-4 circle text-center icon-icon_nearme">
+            </div>
+            <div class="d-inline-block d-sm-inline-block bg-light mt-md-4 mt-lg-4 mt-xl-4 circle text-center icon-icon_favorites">
+            </div>
+        </div>
+
+        <div class="phone d-flex justify-content-center mt-2 col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-4">
+            <img src="./images/mobile.png" alt="the phone" />
+        </div>
+
+        <div class="d-none d-md-block col-md-0 col-lg-1 col-xl-2"></div>
+    </div>
+    <!-- Adv. - End -->
+
+    <!-- Download - Start -->
+    <div class="row m-0 d-flex justify-content-center align-items-center download">
+        <div class="col-11 col-sm-10 col-md-8 col-lg-10 col-xl-10 d-flex flex-column flex-lg-row-reverse align-items-center mt-4 p-3 justify-content-center position-relative wrapper">
+            <div class="down">
+                <img class="position-lg-absolute dl" src="./images/021_dlbox_icon_download.svg" alt="download box" />
+                <span class=" Version">
+                    Version :  2.3.04
+                  </span>
+            </div>
+            <div class="d-flex flex-column align-items-center contact">
+                <div class="h4 text-green m-3">
+                    دانلود اپلیکیشن جاسترو
+                </div>
+                <div class="text-center">
+                    شما می توانید با وارد کردن شماره همراه خود در کارد پایین لینک دانلود اپلیکیشن رو دریافت کنید
+                </div>
+                <div class="d-flex flex-column align-items-center d-lg-block form">
+                    <input class="p-1 mt-4" type="email" />
+                    <button class="btn position-lg-relative text-light btn-orange">دانلود</button>
+
+                </div>
+                <div class="text">یا از یکی از روشهای زیر اپلیکیشن جاسترو رو دانلود کنید</div>
+                <div class="d-flex flex-column flex-lg-row greens">
+                    <button class="btn btn-green text-light m-3">کافه بازار
+                        <img src="./images/bazar.png" alt="">
+                    </button>
+                    <button class="btn btn-green text-light m-3">Google paly
+                        <img src="./images/google play.png" alt="">
+                    </button>
+                    <button class="btn btn-green text-light m-3">دانلود مستقیم
+                        <img src="./images/download.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Download - Start -->
+
+    <!-- Trip - Start -->
+    <div class="row m-0 mt-5 p-4 p-md-5 d-flex justify-content-center trip">
+        <div class="d-flex flex-column align-items-center p-2 text-justify text-md-center wrapper">
+            <div class="h3 mb-3 pt-3 mt-5 mt-md-3 text-light">آمادگی سفر</div>
+            <div class="texts text-light">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد
+            </div>
+            <button class="btn btn-orange text-light mt-4">آماده سفر شو</button>
+        </div>
+    </div>
+    <!-- Trip - End -->
+
+    <!-- Idea - start -->
+    <div class="row m-0 d-flex flex-column align-items-center p-2 mt-5 idea">
+        <div class="h3 text-green m-3">ایده های سفر</div>
+        <div class="text-center col-11 col-sm-11 com-md-10 text">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+            کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد
+        </div>
+    </div>
+    <!-- Idea - End -->
+
+    <!-- Gallery - Start -->
+    <div class="row m-0 d-flex justify-content-center mt-5 gallery">
+        <dis class="p-3 wrapper">
+            <div class="d-inline-block text-center m-2 overflow-hidden g-item g-item-1">
+                <div class="bg-dark d-flex justify-content-center align-items-center sub-text text-light">علمی</div>
+            </div>
+            <div class="d-inline-block text-center m-2 overflow-hidden g-item g-item-2">
+                <div class="bg-dark d-flex justify-content-center align-items-center sub-text text-light">طبیعی
+                </div>
+            </div>
+            <div class="d-inline-block text-center m-2 overflow-hidden g-item g-item-3">
+                <div class="bg-dark d-flex justify-content-center align-items-center sub-text text-light">تاریخی
+                </div>
+            </div>
+            <div class="d-inline-block text-center m-2 overflow-hidden g-item g-item-4">
+                <div class="bg-dark d-flex justify-content-center align-items-center sub-text text-light">مذهبی
+                </div>
+            </div>
+            <div class="d-inline-block text-center m-2 overflow-hidden g-item g-item-5">
+                <div class="bg-dark d-flex justify-content-center align-items-center sub-text text-light">تفریحی
+                </div>
+            </div>
+        </dis>
+    </div>
+    <!-- Gallery - End -->
+
+    <!-- Mobile footer - Start -->
+    <footer class="row m-0 d-lg-none d-xl-none mobile">
+        <div class="d-flex flex-column align-items-center top col-12">
+            <div class="text-center mt-2 px-2">
+                ایده های جدید رو هفتگی دریافت کن آدرس ایمیل خودتون رو در کادر زیر وارد و گزینه ثبت ایمیل رو بزنید
+            </div>
+            <input class="text-center p-2 my-3" type="email" placeholder="...ایمیل خود را وارد کنید" />
+
+            <button class="btn btn-orange text-light">ثبت ایمیل</button>
+
+        </div>
+        <div class="d-flex flex-column align-items-center overflow-hidden bottom col-12">
+            <div class="d-flex icons">
+                <div class="telegram"><i class="fab fa-telegram"></i></div>
+                <div class="instagram"><i class="fab fa-instagram"></i></div>
+                <div class="twitter"><i class="fab fa-twitter"></i></div>
+            </div>
+            <div class="links">
+                <div class="link">
+                    لینک اصلی
+                    <i class="fas fa-circle"></i>
+                </div>
+                <div class="link">
+                    لینک اصلی
+                    <i class="fas fa-circle"></i>
+                </div>
+                <div class="link">
+                    لینک اصلی
+                    <i class="fas fa-circle"></i>
+                </div>
+                <div class="link">
+                    لینک اصلی
+                    <i class="fas fa-circle"></i>
+                </div>
+                <div class="link">
+                    لینک اصلی
+                    <i class="fas fa-circle"></i>
+                </div>
+                <div class="link">
+                    لینک اصلی
+                    <i class="fas fa-circle"></i>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="tel">
+                    <i class="fas fa-phone-volume"></i>09397847711
+                </div>
+                <div class="mail">
+                    <i class="fas fa-envelope"></i>hesamhaniball@gmail.com
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Mobile footer - End -->
+
+    <!-- Desktop footer - Start -->
+    <footer class="row m-0 d-none mt-4 d-lg-block d-xl-block desktop">
+        <div class="top">
+            <div class="d-flex flex-column align-items-center top col-12">
+                <div class="text-center mt-2 px-2">
+                    ایده های جدید رو هفتگی دریافت کن آدرس ایمیل خودتون رو در کادر زیر وارد و گزینه ثبت ایمیل رو بزنید
+                </div>
+                <div class="my-5">
+                    <button class="btn btn-orange text-light">ثبت ایمیل</button>
+                    <input class="text-center p-2" type="email" placeholder="...ایمیل خود را وارد کنید" />
+                </div>
+            </div>
+        </div>
+        <div class="d-flex align-items-end justify-content-center bottom">
+            <div class="col-3 row m-0 contact pb-3">
+                <div class="col-12 d-flex justify-content-center icons">
+                    <div class="telegram"><i class="fab fa-telegram"></i></div>
+                    <div class="instagram"><i class="fab fa-instagram"></i></div>
+                    <div class="twitter"><i class="fab fa-twitter"></i></div>
+                </div>
+
+                <div class="tel text-light mt-5 col-6">
+                    <i class="fas fa-phone-volume"></i> 09397847711
+                </div>
+                <div class="mail text-light mt-5 col-6">
+                    <i class="fas fa-envelope"></i> hesamhaniball@gmail.com
+                </div>
+            </div>
+            <div class="col-3 mt-4 text-light row m-0 links">
+                <div class="col-6 link">
+                    لینک اصلی
+                    <i class="fas fa-circle"></i>
+                </div>
+                <div class="col-6 link">
+                    لینک اصلی
+                    <i class="fas fa-circle"></i>
+                </div>
+                <div class="col-6 link">
+                    لینک اصلی
+                    <i class="fas fa-circle"></i>
+                </div>
+                <div class="col-6 link">
+                    لینک اصلی
+                    <i class="fas fa-circle"></i>
+                </div>
+                <div class="col-6 link">
+                    لینک اصلی
+                    <i class="fas fa-circle"></i>
+                </div>
+                <div class="col-6 link">
+                    لینک اصلی
+                    <i class="fas fa-circle"></i>
+                </div>
+            </div>
+            <div class="col-3 row d-flex justify-content-center align-items-end m-0 brand">
+                <img src="./images/camel-logo.png" alt="" />
+                <div class="text text-light col-10">
+                    کلیه حقوق این وبسایت متعلق به <span class="text-green">جاسترو</span> بوده و هرگونه استفاده از محتویات آن غیر مجاز است
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Desktop footer - End -->
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
